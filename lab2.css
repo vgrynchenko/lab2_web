@@ -1,0 +1,47 @@
+.table
+{
+    margin-top: 10px;
+    font-family: 'Zapf Chancery', cursive;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #E6E6FA;
+}
+thead
+{
+    text-align: center;
+     background-color: #AFEEEE;
+
+}
+body
+{
+	background-color: #FFF8DC;
+}
+.container {
+	margin: 0 auto;
+	width: 1 px;
+}
+#header {
+
+	padding: 100 px 0;
+	border: solid 1px grey;
+	border-radius: 10px;
+	background-image: url('img_trg.png');
+	background-size: 100%;
+}
+#header h1 {
+	color: #00008B;
+	text-align: center;
+}
+.buttons {
+	margin: 10px;
+	width: 200 px;
+	font-family: 'Zapf Chancery', cursive;
+}
+button{
+	font-family: 'Zapf Chancery', cursive;
+	margin: 5px;
+}
+
+form{
+	margin: 5px;
+}

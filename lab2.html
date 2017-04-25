@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Lab2</title>
+	<link rel="stylesheet" href="lab2.css">
+	<script type="text/javascript" src="lab2.js"></script>
+</head>
+
+<body>
+	<header id = "header">
+		<div class = "container">
+			<h1>Прямоугольный треугольник</h1>
+		</div>
+	</header>
+	<table class = "table" border="1" cellpadding="10" cellspacing="0" >
+		<thead>
+			<tr>
+				<th>&#8470;</th>
+				<th>Первая сторона</th>
+				<th>Вторая сторона</th>
+				<th>Радиус описанной окружности</th>
+				<th>Полупериметр</th>
+				<th> Первый угол</th>
+				<th>Второй угол</th>
+				<th>Процент увеличения</th>
+				<th>Изменение стороны №1</th>
+				<th>Изменение стороны №2</th>
+				
+			</tr>
+		</thead>
+		<tbody id="triangles"></tbody>
+	</table>
+	<div><center>
+	<form>
+		<input type = "text" placeholder="Введите первый катет" id = "side1">
+		<input type = "text" placeholder="Введите второй катет" id = "side2">
+	</form>
+	<button onMouseOver="this.style.background='#F5DEB3'" onMouseOut="this.style.background='#AFEEEE'", onclick = "data.addNew()">Добавить треугольник с введенными сторонами</button>
+	</center></div>
+	<div><center>
+	<button class = "buttons" onMouseOver="this.style.background='#F5DEB3'" onMouseOut="this.style.background='#AFEEEE'", onclick="data.refreshTable()">&#8635; Обновить </button>
+	<button class = "buttons" onMouseOver="this.style.background='#F5DEB3'" onMouseOut="this.style.background='#AFEEEE'", onclick="data.addRandom()">Добавить случайные значения катетов треугольника</button>
+	<button class = "buttons" onMouseOver="this.style.background='#F5DEB3'" onMouseOut="this.style.background='#AFEEEE'", onclick="data.clear()">&#10008;       Удалить таблицу</button>
+	<button class = "buttons" onMouseOver="this.style.background='#F5DEB3'" onMouseOut="this.style.background='#AFEEEE'", onclick="data.deleteTriangle()">&#10008;       Удалить треугольник  </button>
+
+
+	</div></center>
+
+	<script type="text/javascript">data.refreshTable()</script>	
+</body>
+
+</html>
